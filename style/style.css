@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+/* Start page style */
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAE5E2;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+h1, h2 {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    color: #F50021;
+}
+
+p {
+    font-family: "Noto Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    color: #E79E98;
+}
+
+button {
+    width: 134px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: none;
+    background: #E79E98;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+button#yes:hover {
+    transform: translateX(-20px);
+}
+
+button#no:hover {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(/images/flower-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.question {
+    margin: 650px 0;
+}
+
+.hidden {
+    margin: 650px 0 100px;
+    display: none;
+    transition: .5s ease-in;
+}
+
+.extra {
+    border: 3px solid #E79E98;
+    padding: 20px;
+    margin: 50px 0;
+}
+
+a {
+    color: #E79E98;
+    transition: .5s ease-in-out;
+}
+
+a:hover {
+    color: #fff;
+}
